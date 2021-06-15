@@ -5,7 +5,7 @@ public class Check {
     public static char TO = 'O';
 
     public static char rows(char[][] field){
-
+        //TODO duplicated code
         for(int i = 0; i< field.length; i++){
             int counterX = 0;
             int counterO = 0;
@@ -28,6 +28,7 @@ public class Check {
 
 
     public static char cols(char[][] field){
+        //TODO duplicated code
         for(int i = 0; i< field.length; i++){
             int counterX = 0;
             int counterO = 0;
@@ -51,6 +52,7 @@ public class Check {
 
     public static char diagonal1(char[][] field){
 
+        //TODO duplicated code
         int counterX = 0;
         int counterY = 0;
         for(int i = 0; i< field.length; i++){
@@ -72,6 +74,7 @@ public class Check {
 
     public static char diagonal2(char[][] field){
 
+        //TODO duplicated code
         int counterX = 0;
         int counterY = 0;
         for(int i = 0; i< field.length; i++){
