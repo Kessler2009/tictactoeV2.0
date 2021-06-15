@@ -1,3 +1,4 @@
+//TODO no capital letters in package naming
 package com.TicTacToe;
 
 import java.util.InputMismatchException;
@@ -62,6 +63,7 @@ public class Game {
         char currentPlayer = TX;
         System.out.println(player1 + ", choose X position: ");
 
+        //TODO while true
         while (true) {
 
             try{
@@ -85,17 +87,20 @@ public class Game {
             } catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("wrong position");
             }  catch(InputMismatchException e){
+                //TODO this is not enough
                 System.out.println("insert number");
             }
 
             printBoard();
 
+            //TODO not optimal solution
             char rows, cols, diagonal1, diagonal2;
             rows = Check.rows(field);
             cols = Check.cols(field);
             diagonal1 = Check.diagonal1(field);
             diagonal2 = Check.diagonal2(field);
 
+            //TODO 4 copied blocks of code, again?
             if(rows == TX) {
                 System.out.println("The winner is " + player1);
                 continueGame();
